@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration Form</title>
+</head>
+<body>
+	<h1>Registration Form</h1>
+	<hr>
+	<form name="f1" method="POST" 
+		action="/Learn-servlet2/Register">
+		<table>
+			<tbody>
+				<tr>
+					<td>User Name: </td>
+					<td><input type="text" name="userName"/></td>
+				</tr>
+				<tr>
+					<td>Password: </td>
+					<td><input type="password" name="password"/></td>
+				</tr>
+				<tr>
+					<td>Sex : </td>
+					<td> 
+						<input type="radio" name="gender" value="Male"/> Male &nbsp;
+						<input type="radio" name="gender" value="Female"/> Female &nbsp;
+						<input type="radio" name="gender" value="Transgender"/> Transgender &nbsp;
+					</td>
+				</tr>
+				<tr>
+					<td>Hobbies : </td>
+					<td>
+						<input type="checkbox" name="hobbies" value="Movies"/> Movies &nbsp;
+						<input type="checkbox" name="hobbies" value="Music"/> Music &nbsp;
+						<input type="checkbox" name="hobbies" value="Sports"/> Sports &nbsp;
+					</td>
+				</tr>
+				<tr>
+					<td>Countries : </td>
+					<td>
+						<select name="country">
+							<option value="Nigeria"> Nigeria </option>
+							<option value="Togo"> Togo </option>
+							<option value="Ghana"> Ghana </option>
+							<option value="Liberia"> Liberia </option>
+							<option value="Guinea"> Guinea </option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Languages : </td>
+					<td>
+						<select name="languages" multiple="multiple">
+							<option value="Arabic"> Arabic </option>
+							<option value="Chinese"> Chinese </option>
+							<option value="English"> English </option>
+							<option value="French"> French </option>
+							<option value="Hindi"> Hindi </option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td><input type="submit" value="Register" name="btnRegister" /> &nbsp;
+					<input type="reset" value="Clear" name="btnClear" /></td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+</body>
+</html>
